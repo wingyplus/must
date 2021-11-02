@@ -39,3 +39,7 @@ import (
 var re = must.Must(regexp.Compile("<regex>")) // The `Must` is generic!
 var tmpl = must.Must(template.New("name").Parse("text")) // Yeah, use the same logic.
 ```
+
+## This maybe violate the Go Proverb
+
+If you thing this violate the "[A little copying is better than a little dependency.](https://www.youtube.com/watch?v=PAAkCSZUG1c&t=9m28s)" of the Go Proverbs rule. The just copy the code, I don't mind if you do it. But I hope this will reduce the LoC of your code base, less or more
